@@ -290,7 +290,7 @@ a p {
 }
 
 .social .ic-tw {
-    background: url(/img/icon/twitter.svg) no-repeat 60% 50%;
+    background: url(../img/icon/twitter.svg) no-repeat 60% 50%;
     background-size: 80%;
 }
 
@@ -304,7 +304,7 @@ svg path {
 }
 
 .social .ic-fb {
-    background: url("/img/icon/facebook.svg") no-repeat 50% 50%;
+    background: url("../img/icon/facebook.svg") no-repeat 50% 50%;
     background-size: 70%;
 }
 
@@ -314,7 +314,7 @@ svg path {
 }
 
 .social .ic-pn {
-    background: url("/img/icon/pinterest.svg") no-repeat 50% 50%;
+    background: url("../img/icon/pinterest.svg") no-repeat 50% 50%;
     background-size: 70%;
 }
 
@@ -329,7 +329,7 @@ svg path {
 }
 
 .social .ic-gp {
-    background: url("/img/icon/google-plus.svg") no-repeat 50% 50%;
+    background: url("../img/icon/google-plus.svg") no-repeat 50% 50%;
     background-size: 70%;
 }
 
@@ -437,4 +437,19 @@ svg path {
 
 #contact .btn {
     float: none;
+}
+.nav .topLink{
+    color: dimgrey;
+    background: ;
+    position: fixed;
+	bottom: 30px;
+	right: 30px;
+	font: 14pt Arial, sans-serif;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 15px 15px;
+}
+.topLink:focus{
+    color: dimgrey;
+    border: 1px solid #fed136;
 }

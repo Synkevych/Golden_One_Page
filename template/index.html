@@ -17,10 +17,11 @@
                 </div>
                 <ul class="nav">
                     <li> <a href="#">Home</a> </li>
-                    <li> <a href="#">Services</a> </li>
-                    <li> <a href="#">Portfolio</a> </li>
-                    <li> <a href="#">About</a> </li>
-                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <li> <a href="#top" class="topLink">&#8679;</a> </li>
                 </ul>
             </div>
         </div>
@@ -31,7 +32,7 @@
                 <button class="btn">Tell Me More</button>
             </div>
         </div>
-        <div id="services" class="box">
+        <div id="services" class="box" name="services">
             <div class="container">
                 <h2 class="title">Services</h2>
                 <p class="descr">Proin iaculis purus consequat sem cure.</p>
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div id="portfolio" class="box">
+        <div id="portfolio" class="box" name="portfolio">
             <div class="container">
                 <h2 class="title">Our portfolio</h2>
                 <p class="descr">Proin iaculis purus consequat sem cure.</p>
@@ -144,17 +145,17 @@
                 <h2 class="title">our amazing team</h2>
                 <p class="descr">Proin iaculis purus consequat sem cure.</p>
                 <div class="team-wrap clearfix">
-                    <div class="team-iteam"> <img src="../img/team/team-img.png" height="220" width="220" alt="">
+                    <div class="team-iteam"> <img src="../img/team/1.png" height="220" width="220" alt="">
                         <h5 class="title">Kimberly Thompson</h5>
                         <p class="cat">Marketer</p>
                         <div class="social"> <a href="#" class="ic-tw">&nbsp;</a> <a href="#" class="ic-fb">&nbsp;</a> <a href="#" class="ic-pn">&nbsp;</a> </div>
                     </div>
-                    <div class="team-iteam"> <img src="../img/team/team-img.png" height="220" width="220" alt="">
+                    <div class="team-iteam"> <img src="../img/team/2.png" height="220" width="220" alt="">
                         <h5 class="title">Rico Massimo</h5>
                         <p class="cat">Coder</p>
                         <div class="social"> <a href="#" class="ic-tw">&nbsp;</a> <a href="#" class="ic-fb">&nbsp;</a> <a href="#" class="ic-gp">&nbsp;</a> </div>
                     </div>
-                    <div class="team-iteam"> <img src="../img/team/team-img.png" height="220" width="220" alt="">
+                    <div class="team-iteam"> <img src="../img/team/3.png" height="220" width="220" alt="">
                         <h5 class="title">Uku Mason</h5>
                         <p class="cat">Graphic Designer</p>
                         <div class="social"> <a href="#" class="ic-tw">&nbsp;</a> <a href="#" class="ic-fb">&nbsp;</a> <a href="#" class="ic-pn">&nbsp;</a> </div>
@@ -196,9 +197,11 @@
             </div>
         </div>
     </div>
-    <script src="/js/jquery-3.2.1.min.js">
-    </script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
     <script>
+        let c1 = new Scroll("body");
+        
         $(function () {
             $('a').mouseenter(function () {
                 $('path', this).attr('fill', '#ccc');
